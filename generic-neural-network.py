@@ -69,8 +69,6 @@ class HDF5Dataset(Dataset):
 
     def __getitem__(self, event):
         with h5py.File(self.file_path, 'r') as file:
-            
-            print(f"Accessing index: {event}, Total events: {len(self.events)}, Total labels: {len(self.labels)}")
             data_index = self.events[event]  
             data = file['charge/calib_final_hits/data'][data_index]
             #features = data['x', 'y', 'z']
