@@ -195,7 +195,6 @@ for epoch in tqdm(range(epochs)):
         model=model, 
         loss_fn=loss_fn,
         optimizer=optimizer,
-        accuracy_fn=accuracy_fn,
         device=device
     )
 model_results = eval_model(
