@@ -6,7 +6,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader, random_split
 import torch.nn as nn
 import matplotlib.pyplot as plt
-#from helper_functions import accuracy_fn 
+from helper_functions import accuracy_fn 
 
 
 # Import tqdm for progress bar
